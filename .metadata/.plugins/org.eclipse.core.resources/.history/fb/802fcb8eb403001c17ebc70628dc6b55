@@ -1,0 +1,28 @@
+package testNG;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeSuite;
+
+public class TestNGSuite {
+
+	public static String url = "http://orangehrm.qedgetech.com";
+	@BeforeSuite
+	public void orgLaunch(){
+		System.setProperty("webdriver.gecko.driver", "D:\\ManishRecordings/Jars/geckodriver.exe");
+		driver = new FirefoxDriver();
+		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
+		fi = new FileInputStream(path);
+		pr = new Properties();
+		pr.load(fi);
+		
+		WebElement login = driver.findElement(By.id(pr.getProperty("login")));
+	}
+}

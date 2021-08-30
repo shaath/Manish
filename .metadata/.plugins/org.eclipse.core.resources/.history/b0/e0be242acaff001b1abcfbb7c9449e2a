@@ -1,0 +1,7 @@
+###### OrgHRM Login Page################
+## id property of Username text box
+username=txtUsername
+## id property of password text box
+password=txtPassword
+## id property login button
+

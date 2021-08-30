@@ -1,0 +1,13 @@
+package datadriven;
+
+import java.io.FileInputStream;
+
+public class XlOps {
+
+	public static void main(String[] args) {
+		String path = "D:\\ManishRecordings\\Workspace\\SeleniumProject\\src\\testdata\\TestData.xlsx";
+		FileInputStream fi = new FileInputStream(path);
+
+	}
+
+}

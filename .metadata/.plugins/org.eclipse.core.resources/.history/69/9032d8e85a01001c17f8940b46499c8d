@@ -1,0 +1,10 @@
+package datadriven;
+
+import org.testng.annotations.Test;
+
+public class TestNGAnnotationsEg {
+
+	@Test
+	
+	
+}

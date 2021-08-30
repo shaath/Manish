@@ -1,0 +1,12 @@
+package testNG;
+
+import org.testng.annotations.BeforeSuite;
+
+public class TestNGSuite {
+
+	public static String url = "http://orangehrm.qedgetech.com";
+	@BeforeSuite
+	public void orgLaunch(){
+		
+	}
+}

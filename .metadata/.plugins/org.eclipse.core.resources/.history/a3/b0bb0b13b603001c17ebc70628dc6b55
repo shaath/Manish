@@ -1,0 +1,11 @@
+package testNG;
+
+import org.testng.annotations.Test;
+
+public class EmpRegTC_TestNG extends TestNGSuite{
+
+	@Test
+	public void orgEmpReg(){
+		driver.
+	}
+}
